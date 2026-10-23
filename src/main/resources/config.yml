@@ -1,0 +1,13 @@
+# Maximum visible length of a prefix (formatting codes are not counted)
+max-length: 16
+
+# Words that cannot appear in a prefix (case-insensitive, substring match)
+blocked-words:
+  - admin
+  - owner
+  - staff
+  - mod
+  - helper
+
+# Chat format. Placeholders: <prefix>, <name>, <message>
+chat-format: "<prefix><name><dark_gray> » </dark_gray><message>"
