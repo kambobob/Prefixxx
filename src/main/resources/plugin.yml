@@ -1,0 +1,24 @@
+name: PrefixPlus
+version: 1.0.0
+main: dev.example.prefix.PrefixPlugin
+description: Chat, tab list, and nametag prefixes with MiniMessage and &-color support (Folia compatible)
+author: you
+api-version: '26.2'
+folia-supported: true
+
+commands:
+  prefix:
+    description: Manage your prefix
+    usage: /<command> set <text> | clear | admin <set|clear> ... | reload
+    aliases: [pfx]
+
+permissions:
+  prefix.use:
+    description: Set your own prefix
+    default: true
+  prefix.color:
+    description: Use MiniMessage tags and &-color codes in prefixes
+    default: op
+  prefix.admin:
+    description: Manage other players' prefixes and reload the config
+    default: op
