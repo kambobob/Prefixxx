@@ -10,10 +10,10 @@
     <packaging>jar</packaging>
 
     <properties>
-        <java.version>21</java.version>
+        <java.version>25</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!-- Verify this matches the Paper/Folia 26.2 API version you target -->
-        <paper.version>26.2-R0.1-SNAPSHOT</paper.version>
+        <!-- Exact build from https://repo.papermc.io (26.2 line) -->
+        <paper.version>26.2.build.134-stable</paper.version>
     </properties>
 
     <repositories>
