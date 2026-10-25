@@ -5,6 +5,7 @@ description: Chat, tab list, and nametag prefixes with MiniMessage and &-color s
 author: you
 api-version: '26.2'
 folia-supported: true
+softdepend: [PlaceholderAPI, LuckPerms]
 
 commands:
   prefix:
