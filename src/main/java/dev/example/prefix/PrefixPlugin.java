@@ -20,6 +20,13 @@ public final class PrefixPlugin extends JavaPlugin {
         getCommand("prefix").setExecutor(command);
         getCommand("prefix").setTabCompleter(command);
 
+        if (getServer().getPluginManager().isPluginEnabled("PlaceholderAPI")) {
+            new PrefixExpansion(this, prefixManager).register();
+            getLogger().info("Registered %prefixplus_tab% placeholder for TAB.");
+        } else {
+            getLogger().warning("PlaceholderAPI not found. %prefixplus_tab% is unavailable.");
+        }
+
         getLogger().info("PrefixPlus enabled.");
     }
 
